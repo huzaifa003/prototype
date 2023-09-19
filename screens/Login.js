@@ -9,9 +9,9 @@ import {
 import React from "react";
 import { LinearGradient } from "expo-linear-gradient";
 
-const Login = () => {
+const Login = ({navigation}) => {
   return (
-    <ImageBackground
+    <ImageBackground 
       style={{
         flex: 1,
         alignItems: "center",
@@ -21,7 +21,7 @@ const Login = () => {
       source={require("../assets/bgImage.png")}
     >
       <LinearGradient
-        className="w-[90%] rounded-md "
+        className="w-[90%] rounded-md shadow-sm  "
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 1 }}
         colors={["#171717CC", "#1D1E24"]}
@@ -66,7 +66,7 @@ const Login = () => {
             placeholder="Enter Password"
           ></TextInput>
 
-          <TouchableOpacity className=" rounded-md m-5  w-[50%] self-center ">
+          <TouchableOpacity onPress={()=>{navigation.navigate('OTP')}} className=" rounded-md m-5  w-[50%] self-center ">
             <LinearGradient
               start={{ x: 0, y: 0 }}
               end={{ x: 1, y: 1 }}
