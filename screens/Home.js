@@ -18,15 +18,15 @@ export default Home = () => {
           className="flex-1 items-center justify-top "
           style={{ maxHeight: "30%" }}
         >
-          <Image
-            source={require("../assets/skainetLogo-removebg-preview.png")}
+          <Image className='h-[220px]'
+            source={require("../assets/sn_logo-removebg-preview.png")}
           />
-
+          <Text className='text-white text-xl font-extralight'>Get your ideas high</Text>
           <StatusBar style="auto" />
         </View>
 
         <View
-          className="flex-1 items-center justify"
+          className="flex-1 items-center justify mt-10"
           style={{ maxHeight: "20%" }}
         >
           <Text
