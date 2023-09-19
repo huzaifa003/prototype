@@ -1,7 +1,7 @@
 import { View, Text,ImageBackground } from 'react-native'
 import React from 'react'
 
-const OTP = ({navigation}) => {
+const ChatList = ({navigation}) => {
   return (
     <ImageBackground
       style={{
@@ -12,10 +12,9 @@ const OTP = ({navigation}) => {
       }}
       source={require("../assets/bgImage.png")}
     >
-
-        <Text onPress={()=>{navigation.navigate('ChatList')}}>OTP</Text>
+         <Text >Chat List</Text>
     </ImageBackground>
   )
 }
 
-export default OTP
+export default ChatList
