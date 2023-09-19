@@ -1,8 +1,20 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Image, ImageBackground } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
-
+import React, { useEffect } from "react";
+import { useNavigation } from '@react-navigation/native';
 export default Home = () => {
+  
+  const navigation = useNavigation();
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      navigation.navigate('Login');
+    }, 3000); 
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, [navigation]);
   return (
     <>
       <ImageBackground
