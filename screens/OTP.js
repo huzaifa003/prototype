@@ -13,7 +13,7 @@ const OTP = ({ navigation }) => {
         justifyContent: 'space-around',
         height:'auto'
       }}
-      source={require('../assets/wallpaper.png')}
+      source={require("../assets/wallpaper.png")}
     >
     
       <KeyboardAvoidingView
@@ -75,7 +75,7 @@ const OTP = ({ navigation }) => {
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 1 }}
                 colors={['#3f5efb', '#fc466b']}
-                style={{ borderRadius: 10 }}
+                
               >
                 <Text style={{ color: 'white', padding: 10, textAlign: 'center', fontSize: 18, fontWeight: 'bold' }}>
                   Confirm

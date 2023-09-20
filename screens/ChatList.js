@@ -17,9 +17,12 @@ import { Ionicons } from '@expo/vector-icons';
 
 const ChatList = ({ navigation }) => {
   return (
-    
+    <ImageBackground
+    source={require("../assets/wallpaper.png")}
+    style={{ height: "100%", width: "100%", flex: 1 }}
+  >
    
-    <View
+    {/* <View
       style={{
         flex: 1,
         alignItems: "center",
@@ -27,7 +30,7 @@ const ChatList = ({ navigation }) => {
         height: "100%",
         backgroundColor: "rgba(39,31,52,30)",
       }}
-    >
+    > */}
       <View
         className="w-full pl-4 pt-6 flex flex-row items-center pb-4 justify-between pr-4"
         style={{
@@ -42,14 +45,11 @@ const ChatList = ({ navigation }) => {
         <MaterialIcons name="photo-camera" size={30} color="white" />
       </View>
 
-      <ImageBackground
-        source={require("../assets/fondo.png")}
-        style={{ height: "100%", width: "100%", flex: 1 }}
-      >
+     
         <MaterialIcons
           style={{
             position: "absolute",
-            top: 15,
+            top: 133,
             left: 25,
             zIndex: 100,
           }}
@@ -78,25 +78,23 @@ const ChatList = ({ navigation }) => {
         />
         <ScrollView className="p-5 pl-2 pr-2 mt-5">
         <TouchableOpacity onPress={()=>{ navigation.navigate('ChatBox')}}> 
-          <User></User>
+          <User username={'Mr.Mike'} seen={false} lastText={'Hi ! What are you doing'} date={'11/12/23'} img={require('../assets/userPic.png')}></User>
           </TouchableOpacity>
-          <TouchableOpacity onPress={()=>{ navigation.navigate('ChatBox')}}> 
-          <User></User>
+        <TouchableOpacity onPress={()=>{ navigation.navigate('ChatBox')}}> 
+          <User username={'Mr.John'} seen={true} lastText={'Hi ! John What are you doing ? '} date={'11/12/23'} img={require('../assets/userPic.png')}></User>
           </TouchableOpacity>
-          <TouchableOpacity onPress={()=>{ navigation.navigate('ChatBox')}}> 
-          <User></User>
+        <TouchableOpacity onPress={()=>{ navigation.navigate('ChatBox')}}> 
+          <User username={'Mr.Ahmer'} seen={false} lastText={'Hi ! What are you doing'} date={'11/12/23'} img={require('../assets/userPic.png')}></User>
           </TouchableOpacity>
-          <TouchableOpacity onPress={()=>{ navigation.navigate('ChatBox')}}> 
-          <User></User>
+        <TouchableOpacity onPress={()=>{ navigation.navigate('ChatBox')}}> 
+          <User username={'Mr.Adeel'} seen={true} lastText={'Hi ! What are you doing'} date={'11/12/23'} img={require('../assets/userPic.png')}></User>
           </TouchableOpacity>
-          <TouchableOpacity onPress={()=>{ navigation.navigate('ChatBox')}}> 
-          <User></User>
-          </TouchableOpacity>
+         
         </ScrollView>
         <View
           style={{
             backgroundColor:
-              "background: linear-gradient(164deg, rgba(24,24,32,1) 0%, rgba(37,37,54,1) 96%)",
+              "background: linear-gradient(164deg, rgba(24,24,32,0.5) 0%, rgba(37,37,54,1) 96%)",
             
           }}
           className=" h-15 p-5"
@@ -118,7 +116,7 @@ const ChatList = ({ navigation }) => {
           </View>
         </View>
       </ImageBackground>
-    </View>
+    // </View>
     
   );
 };

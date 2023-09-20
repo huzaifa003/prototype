@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, Image, ImageBackground } from "react-native";
+import { StyleSheet, Text, View, Image, ImageBackground,TouchableOpacity } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import React, { useEffect } from "react";
 import { useNavigation } from '@react-navigation/native';
@@ -8,14 +8,7 @@ export default Home = () => {
 
   const navigation = useNavigation();
 
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      navigation.navigate('Login');
-    }, 3000);
-    return () => {
-      clearTimeout(timeoutId);
-    };
-  }, [navigation]);
+
   return (
     <>
       <ImageBackground
@@ -45,7 +38,17 @@ export default Home = () => {
             {" "}
             Easily Connect with your family, friends and work through skainet{" "}
           </Text>
-          <Text className=' w-[100px] h-1 mt-7 bg-[#ffff]'></Text>
+          <TouchableOpacity onPress={()=>{navigation.navigate('Login')}} className=" rounded-md m-5  w-[50%] self-center ">
+            <LinearGradient
+              start={{ x: 0, y: 0 }}
+              end={{ x: 1, y: 1 }}
+              colors={["#3f5efb", "#fc466b"]}
+            >
+              <Text className="text-center text-white font-bold text-xl  p-2 pl-4 pr-4">
+                Get Started
+              </Text>
+            </LinearGradient>
+          </TouchableOpacity>
         </View>
 
         <View
