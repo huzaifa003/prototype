@@ -78,20 +78,18 @@ const ChatList = ({ navigation }) => {
         />
         <ScrollView className="p-5 pl-2 pr-2 mt-5">
         <TouchableOpacity onPress={()=>{ navigation.navigate('ChatBox')}}> 
-          <User></User>
+          <User username={'Mr.Mike'} seen={false} lastText={'Hi ! What are you doing'} date={'11/12/23'} img={require('../assets/userPic.png')}></User>
           </TouchableOpacity>
-          <TouchableOpacity onPress={()=>{ navigation.navigate('ChatBox')}}> 
-          <User></User>
+        <TouchableOpacity onPress={()=>{ navigation.navigate('ChatBox')}}> 
+          <User username={'Mr.John'} seen={true} lastText={'Hi ! John What are you doing ? '} date={'11/12/23'} img={require('../assets/userPic.png')}></User>
           </TouchableOpacity>
-          <TouchableOpacity onPress={()=>{ navigation.navigate('ChatBox')}}> 
-          <User></User>
+        <TouchableOpacity onPress={()=>{ navigation.navigate('ChatBox')}}> 
+          <User username={'Mr.Ahmer'} seen={false} lastText={'Hi ! What are you doing'} date={'11/12/23'} img={require('../assets/userPic.png')}></User>
           </TouchableOpacity>
-          <TouchableOpacity onPress={()=>{ navigation.navigate('ChatBox')}}> 
-          <User></User>
+        <TouchableOpacity onPress={()=>{ navigation.navigate('ChatBox')}}> 
+          <User username={'Mr.Adeel'} seen={true} lastText={'Hi ! What are you doing'} date={'11/12/23'} img={require('../assets/userPic.png')}></User>
           </TouchableOpacity>
-          <TouchableOpacity onPress={()=>{ navigation.navigate('ChatBox')}}> 
-          <User></User>
-          </TouchableOpacity>
+         
         </ScrollView>
         <View
           style={{

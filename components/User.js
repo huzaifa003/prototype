@@ -3,7 +3,7 @@ import React from 'react'
 import { MaterialIcons } from "@expo/vector-icons";
 import { FontAwesome5 } from '@expo/vector-icons'; 
 
-const User = () => {
+const User = ({username,img,lastText,date,seen}) => {
   return (
       
     <View style={{backgroundColor:'rgba(0,0,0,0.3)'}}>
@@ -13,19 +13,21 @@ const User = () => {
    <View style={{padding:9}}>
    <View style={{flex:1, flexDirection:'row', justifyContent:'space-between', alignItems:'center'}}>
      <View style={{flex:1, flexDirection:'row',alignItems:'center' ,gap:45}}>
-     <Image source={require('../assets/userPic.png')} />
-      <Text className ='text-white font-bold text-xl'>Mr.Mike</Text>
+     <Image source={img} />
+      <Text className ='text-white font-bold text-xl'>{username}</Text>
      </View>
      
-      <Text  className='text-white'>11/12/23</Text>
+      <Text  className='text-white'>{date}</Text>
    </View>
    <View style={{flex:1, flexDirection:'row', justifyContent:'center', alignItems:'center' }}>
     
      <View className='flex-1 flex-row justify-center gap-3 ' >
-     <FontAwesome5  name="check-double" size={20} color="#3497F9" />
-      <Text className='text-white'>Hi Sir How are you ?</Text>
+{seen ? <FontAwesome5  name="check-double" size={20} color="#3497F9" /> : <FontAwesome5  name="check-double" size={20} color="gray" />}
+   
+
+      <Text className='text-white'>{lastText.slice(0,23)}</Text>
      </View>
-     
+
       <MaterialIcons  name='keyboard-arrow-right' size={24} color={'white'}></MaterialIcons>   
       </View>
    </View>
