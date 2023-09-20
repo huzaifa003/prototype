@@ -4,8 +4,8 @@ import { MaterialIcons } from "@expo/vector-icons";
 
 const ChatBox = ({navigation}) => {
   return (
-    <ImageBackground source={require('../assets/fondo.png')} style={{
-        height:'100%'
+    <ImageBackground source={require('../assets/wallpaper.png')} style={{
+        height:'102%'
     }}>
 
 
