@@ -19,7 +19,7 @@ const Login = ({navigation}) => {
         justifyContent: "space-around",
         height: "100%",
       }}
-      source={require("../assets/bgImage.png")}
+      source={require("../assets/wallpaper.png")}
     >
       <View className="w-[100%]" style={{alignItems: 'center', alignContent: 'center'}}>
       <LinearGradient
@@ -65,7 +65,7 @@ const Login = ({navigation}) => {
               end={{ x: 1, y: 1 }}
               colors={["#3f5efb", "#fc466b"]}
             >
-              <Text className="text-center text-white p-2 rounded-md">
+              <Text className="text-center text-white font-bold text-xl  p-2 ">
                 Login
               </Text>
             </LinearGradient>

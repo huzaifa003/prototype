@@ -16,23 +16,14 @@ const ChatBox = ({ navigation }) => {
 
       <ScrollView style={{ maxHeight:'75%'}}>
         <View style={{ flex: 1, flexDirection: 'column', gap: 30, paddingTop: 30, paddingLeft: 20, paddingRight: 20 }}>
-          <LeftSideChat />
-          <RightSideChat />
-
-          <LeftSideChat />
-          <RightSideChat />
-
-
-          <LeftSideChat />
-          <RightSideChat />
+          <LeftSideChat msg={'Hi how are you ?'} />
+          <RightSideChat msg={'Hi ! I am fine '} />
+          <RightSideChat  msg={'What about you ?'}/>
+          <LeftSideChat msg={'I am doing well'} />
+          
 
 
-          <LeftSideChat />
-          <RightSideChat />
-
-
-          <LeftSideChat />
-          <RightSideChat />
+         
         </View>
       </ScrollView>
 

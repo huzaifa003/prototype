@@ -2,13 +2,11 @@ import React from "react";
 import { View, Text, ImageBackground, Image, SafeAreaView, StyleSheet } from 'react-native'
 
 
-export default RightSideChat = () => {
+export default RightSideChat = ({msg}) => {
     return (
         <View style={styles.container}>
             <Text style={{ color: 'white' }}>
-                DADJAKDJAKDAJDAKDJKADJKAJKAJDKADJKAJK
-                DADJAKDJAKDAJDAKDJKADJKAJKAJDKADJKAJK
-                DADJAKDJAKDAJDAKDJKADJKAJKAJDKADJKAJK
+              {msg}
             </Text>
         </View>
     )
@@ -19,8 +17,8 @@ const styles = StyleSheet.create({
         padding: 10,
         alignSelf: 'flex-end',
         alignContent: 'flex-end',
-        backgroundColor: 'blue',
-        borderColor: 'blue',
+        backgroundColor: '#2265DD',
+        borderColor: '#2265DD',
         borderWidth: 2,
         maxWidth: '85%',
         minHeight: '5%',
