@@ -52,10 +52,11 @@ export default FooterChatBox = () => {
               marginLeft: 10,
               marginRight:10,
               paddingHorizontal:40,
+              paddingVertical:15,
               color:'white'
             }}
           />
-          <FontAwesome style={{padding:5}} name="microphone" size={30} color="white" />
+          <FontAwesome style={{padding:5, position:'absolute', right:70}} name="microphone" size={30} color="white" />
           <Ionicons style={{padding:5}} name="camera-outline" size={40} color="white" />
         </View>
 

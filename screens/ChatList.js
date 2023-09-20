@@ -76,21 +76,19 @@ const ChatList = ({ navigation }) => {
           placeholder="Search"
           placeholderTextColor="rgba(255, 255, 255, 0.5)"
         />
-        <ScrollView className="p-5 pl-2 pr-2 mt-5">
-        <TouchableOpacity onPress={()=>{ navigation.navigate('ChatBox')}}> 
-          <User username={'Mr.Mike'} seen={false} lastText={'Hi ! What are you doing'} date={'11/12/23'} img={require('../assets/userPic.png')}></User>
+        <ScrollView style={{ padding: 10,marginTop:10 }}>
+        {[
+          { username: "Mr.Mike", seen: false, lastText: "Hi ! What are you doing", date: "11/12/23", img: require('../assets/userPic.png'),grp:false },
+          { username: "Mr.John", seen: true, lastText: "Hi ! John What are you doing ?", date: "11/12/23", img: require('../assets/adeel.png'),grp:false },
+          { username: "Mr.Ahmer", seen: false, lastText: "Hi ! What are you doing", date: "11/12/23", img: require('../assets/ahmer.png'),grp:false },
+          { username: "Mr.Adeel", seen: true, lastText: "Hi ! What are you doing", date: "11/12/23", img: require('../assets/max.png'),grp:false },
+          { username: "Group Chat", seen: true, lastText: "Hi ! What are you doing", date: "11/12/23", img: require('../assets/max.png'),grp:true },
+        ].map((user, index) => (
+          <TouchableOpacity key={index} onPress={() => navigation.navigate('ChatBox')}>
+            <User {...user} />
           </TouchableOpacity>
-        <TouchableOpacity onPress={()=>{ navigation.navigate('ChatBox')}}> 
-          <User username={'Mr.John'} seen={true} lastText={'Hi ! John What are you doing ? '} date={'11/12/23'} img={require('../assets/userPic.png')}></User>
-          </TouchableOpacity>
-        <TouchableOpacity onPress={()=>{ navigation.navigate('ChatBox')}}> 
-          <User username={'Mr.Ahmer'} seen={false} lastText={'Hi ! What are you doing'} date={'11/12/23'} img={require('../assets/userPic.png')}></User>
-          </TouchableOpacity>
-        <TouchableOpacity onPress={()=>{ navigation.navigate('ChatBox')}}> 
-          <User username={'Mr.Adeel'} seen={true} lastText={'Hi ! What are you doing'} date={'11/12/23'} img={require('../assets/userPic.png')}></User>
-          </TouchableOpacity>
-         
-        </ScrollView>
+        ))}
+      </ScrollView>
         <View
           style={{
             backgroundColor:
