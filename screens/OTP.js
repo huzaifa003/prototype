@@ -60,7 +60,7 @@ const OTP = ({ navigation }) => {
               Enter the 4 Digits pin sent to you
             </Text>
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-              {[1, 2, 3, 4].map((index) => (
+              {[1, 2, 3, 4,5].map((index) => (
                 <TextInput
                   key={index}
                   style={{
