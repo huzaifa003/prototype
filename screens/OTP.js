@@ -13,7 +13,7 @@ const OTP = ({ navigation }) => {
         justifyContent: 'space-around',
         height:'auto'
       }}
-      source={require('../assets/bgImage.png')}
+      source={require('../assets/wallpaper.png')}
     >
     
       <KeyboardAvoidingView
