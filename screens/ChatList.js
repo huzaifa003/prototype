@@ -17,6 +17,8 @@ import { Ionicons } from '@expo/vector-icons';
 
 const ChatList = ({ navigation }) => {
   return (
+    
+   
     <View
       style={{
         flex: 1,
@@ -75,11 +77,21 @@ const ChatList = ({ navigation }) => {
           placeholderTextColor="rgba(255, 255, 255, 0.5)"
         />
         <ScrollView className="p-5 pl-2 pr-2 mt-5">
+        <TouchableOpacity onPress={()=>{ navigation.navigate('ChatBox')}}> 
           <User></User>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={()=>{ navigation.navigate('ChatBox')}}> 
           <User></User>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={()=>{ navigation.navigate('ChatBox')}}> 
           <User></User>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={()=>{ navigation.navigate('ChatBox')}}> 
           <User></User>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={()=>{ navigation.navigate('ChatBox')}}> 
           <User></User>
+          </TouchableOpacity>
         </ScrollView>
         <View
           style={{
@@ -107,6 +119,7 @@ const ChatList = ({ navigation }) => {
         </View>
       </ImageBackground>
     </View>
+    
   );
 };
 

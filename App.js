@@ -6,6 +6,7 @@ import Login from './screens/Login';
 import Home from './screens/Home';
 import OTP from './screens/OTP';
 import ChatList from './screens/ChatList';
+import ChatBox from './screens/ChatBox';
 const Stack = createNativeStackNavigator();
 export default function App() {
   return (
@@ -34,6 +35,12 @@ export default function App() {
         <Stack.Screen
           name="ChatList"
           component={ChatList}
+          options={{headerShown: false}}
+        
+        />
+        <Stack.Screen
+          name="ChatBox"
+          component={ChatBox}
           options={{headerShown: false}}
         
         />

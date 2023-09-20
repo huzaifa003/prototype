@@ -1,10 +1,11 @@
-import { View,Image, Text } from 'react-native'
+import { View,Image, Text, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { MaterialIcons } from "@expo/vector-icons";
 import { FontAwesome5 } from '@expo/vector-icons'; 
 
 const User = () => {
   return (
+      
     <View style={{backgroundColor:'rgba(0,0,0,0.3)'}}>
       <View style={{width:'100%', backgroundColor:'white',height:'0.5%'}}>
     <Text></Text>
@@ -32,6 +33,7 @@ const User = () => {
     <Text></Text>
    </View>
     </View>
+   
   )
 }
 
