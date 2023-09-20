@@ -19,7 +19,7 @@ const Login = ({navigation}) => {
         justifyContent: "space-around",
         height: "100%",
       }}
-      source={require("../assets/bgImage.png")}
+      source={require('../assets/wallpaper.png')}
     >
       <View className="w-[100%]" style={{alignItems: 'center', alignContent: 'center'}}>
       <LinearGradient
