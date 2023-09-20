@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, ImageBackground, Image, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { LinearGradient } from 'expo-linear-gradient';
+import Logo from '../components/Logo';
 
 const OTP = ({ navigation }) => {
   return (
@@ -46,16 +47,7 @@ const OTP = ({ navigation }) => {
           colors={['#171717CC', '#1D1E24']}
         >
           <View>
-            <Image
-              style={{ alignSelf: 'center' }}
-              source={require('../assets/sn_logo-removebg-preview.png')}
-            />
-             <Text
-            style={{ opacity: 0.6 }}
-            className="text-center text-white text-xl"
-          >
-            Get Your Ideas High
-          </Text>
+          <Logo/>
             <Text style={{ opacity: 0.6, textAlign: 'center', color: '#D7D7D7', fontSize: 16, marginTop: 20, marginBottom: 20 }}>
               Enter the 4 Digits pin sent to you
             </Text>

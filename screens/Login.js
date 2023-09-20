@@ -8,6 +8,7 @@ import {
 } from "react-native";
 import React from "react";
 import { LinearGradient } from "expo-linear-gradient";
+import Logo from "../components/Logo";
 
 const Login = ({navigation}) => {
   return (
@@ -26,17 +27,8 @@ const Login = ({navigation}) => {
         end={{ x: 1, y: 1 }}
         colors={["#171717CC", "#1D1E24"]}
       >
-        <View className=" w-[100%] rounded-md  ">
-          <Image
-            style={{ alignSelf: "center" }}
-            source={require("../assets/sn_logo-removebg-preview.png")}
-          />
-          <Text
-            style={{ opacity: 0.6 }}
-            className="text-center text-white text-xl"
-          >
-            Get Your Ideas High
-          </Text>
+        <View className=" w-[100%] rounded-md p-5 ">
+         <Logo/>
           <Text
             style={{ opacity: 0.6 }}
             className="text-center text-[#D7D7D7] mt-10 mb-10"

@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Image, ImageBackground } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import React, { useEffect } from "react";
 import { useNavigation } from '@react-navigation/native';
+import Logo from "../components/Logo";
 export default Home = () => {
   
   const navigation = useNavigation();
@@ -22,23 +23,19 @@ export default Home = () => {
           flex: 1,
           alignItems: "center",
           justifyContent: "center",
-          height: "100%",
+          height: "102%",
         }}
-        source={require("../assets/bgImage.png")}
+        source={require("../assets/wallpaper.png")}
       >
         <View
           className="flex-1 items-center justify-top "
           style={{ maxHeight: "30%" }}
         >
-          <Image className='h-[220px]'
-            source={require("../assets/sn_logo-removebg-preview.png")}
-          />
-          <Text className='text-white text-xl font-extralight'>Get your ideas high</Text>
-          <StatusBar style="auto" />
+ <Logo/>
         </View>
-
+      
         <View
-          className="flex-1 items-center justify mt-10"
+          className="flex-1 items-center justify "
           style={{ maxHeight: "20%" }}
         >
           <Text
@@ -48,7 +45,7 @@ export default Home = () => {
             {" "}
             Easily Connect with your family, friends and work through skainet{" "}
           </Text>
-          <Text className=' w-[100px] h-1 mt-7 bg-[#1B97DD]'></Text>
+          <Text className=' w-[100px] h-1 mt-7 bg-[#ffff]'></Text>
         </View>
 
         <View

@@ -10,7 +10,7 @@ const ChatBox = ({navigation}) => {
 
 
     <View
-    className="w-full pl-4 pt-8 flex flex-row items-center pb-4 justify-between pr-4"
+    className="w-full pl-4 pt-4 flex flex-row items-center pb-4 justify-between pr-4"
     style={{
       backgroundColor:
         "background: linear-gradient(164deg, rgba(24,24,32,0.8) 0%, rgba(37,37,54,0.2) 96%)",
