@@ -41,20 +41,22 @@ const OTP = ({ navigation }) => {
             shadowOpacity: 0.25,
             shadowRadius: 4,
             elevation: 5,
+            minHeight: '50%'
           }}
           start={{ x: 0, y: 0 }}
           end={{ x: 1, y: 1 }}
           colors={['#171717CC', '#1D1E24']}
         >
-          <View>
+          <View style={{minHeight: "50%"}}>
           <Logo/>
             <Text style={{ opacity: 0.6, textAlign: 'center', color: '#D7D7D7', fontSize: 16, marginTop: 20, marginBottom: 20 }}>
-              Enter the 4 Digits pin sent to you
+              Enter the 5 Digits pin sent to you
             </Text>
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
               {[1, 2, 3, 4,5].map((index) => (
                 <TextInput
                   key={index}
+                  maxLength = {1}
                   style={{
                     width: '15%',
                     borderWidth: 1,

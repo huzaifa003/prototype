@@ -5,13 +5,13 @@ import React, { useEffect } from "react";
 import { useNavigation } from '@react-navigation/native';
 import Logo from "../components/Logo";
 export default Home = () => {
-  
+
   const navigation = useNavigation();
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       navigation.navigate('Login');
-    }, 3000); 
+    }, 3000);
     return () => {
       clearTimeout(timeoutId);
     };
@@ -31,15 +31,15 @@ export default Home = () => {
           className="flex-1 items-center justify-top "
           style={{ maxHeight: "30%" }}
         >
- <Logo/>
+          <Logo />
         </View>
-      
+
         <View
           className="flex-1 items-center justify "
-          style={{ maxHeight: "20%" }}
+          style={{ maxHeight: "20%", alignContent : 'center', paddingLeft :'2%', paddingRight : '2%' }}
         >
           <Text
-            style={{ paddingLeft: "10%", paddingRight: "10%" }}
+            style={{ paddingLeft: "10%", paddingRight: "10%" ,  alignSelf :'center', textAlign :'center'}}
             className="text-3xl antialiased text-white"
           >
             {" "}

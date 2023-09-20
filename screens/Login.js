@@ -21,6 +21,7 @@ const Login = ({navigation}) => {
       }}
       source={require("../assets/bgImage.png")}
     >
+      <View className="w-[100%]" style={{alignItems: 'center', alignContent: 'center'}}>
       <LinearGradient
         className="w-[90%] rounded-md shadow-sm  "
         start={{ x: 0, y: 0 }}
@@ -71,6 +72,7 @@ const Login = ({navigation}) => {
           </TouchableOpacity>
         </View>
       </LinearGradient>
+      </View>
     </ImageBackground>
   );
 };
