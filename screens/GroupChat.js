@@ -6,6 +6,9 @@ import FooterChatBox from '../components/FooterChatBox';
 import LeftSideChat from '../components/LeftSideChat';
 import RightSideChat from '../components/RightSideChat';
 import LeftSideChatProfile from '../components/LeftSideChatProfile';
+import LeftSideImage from '../components/LeftSideImage';
+import LeftSideButton from '../components/LeftSideButton';
+
 const GroupChat = ({ route, navigation }) => {
     const user = route.params.user;
     console.log(user);
@@ -23,16 +26,19 @@ const GroupChat = ({ route, navigation }) => {
                         // console.log(u.img);
                         return (
                             <>
+                                <LeftSideImage/>
+                                <LeftSideButton/>
                                 <LeftSideChatProfile {...u} />
-                                <RightSideChat/>
+                                
+                                <RightSideChat msg = {"XYZYSASYAYYYACYZZ\nCAHJHAJHJHAHJH"}/>
                             </>
                         )
                     })}
 
-                    <LeftSideChat msg={'Hi how are you ?'} />
+                    {/* <LeftSideChat msg={'Hi how are you ?'} />
                     <RightSideChat msg={'Hi ! I am fine '} />
                     <RightSideChat msg={'What about you ?'} />
-                    <LeftSideChat msg={'I am doing well'} />
+                    <LeftSideChat msg={'I am doing well'} /> */}
 
 
 
