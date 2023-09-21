@@ -5,7 +5,7 @@ import { View, Text, ImageBackground, Image, SafeAreaView, StyleSheet } from 're
 export default RightSideChat = ({msg}) => {
     return (
         <View style={styles.container}>
-            <Text style={{ color: 'white' }}>
+            <Text className="text-md" style={{ color: 'white' }}>
               {msg}
             </Text>
         </View>
@@ -21,9 +21,10 @@ const styles = StyleSheet.create({
         borderColor: '#2265DD',
         borderWidth: 2,
         maxWidth: '85%',
-        minHeight: '5%',
+        minHeight: '3%',
         borderTopRightRadius: 10,
         borderTopLeftRadius: 10,
         borderBottomStartRadius: 10,
+        
     }
 })

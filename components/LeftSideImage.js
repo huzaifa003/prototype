@@ -4,23 +4,18 @@ import { MaterialIcons } from "@expo/vector-icons";
 import { AntDesign } from '@expo/vector-icons';
 export default LeftSideImage = ({ lastText, img }) => {
     console.log(img, lastText)
-    const source = require('../assets/adeel.png');
+    const source = require('../assets/ball.png');
     return (
         <View style={{ flex: 1, flexDirection: 'row', gap: 15 }}>
-            <Image style={{ maxWidth: "15%", maxHeight: "100%" }} source={source}>
+            <Image style={{ maxWidth: "15%", maxHeight: "40%" }} source={source}>
 
             </Image>
             <View style={styles.container}>
 
-                <Image style={{minWidth: '70%'}} source={source}>
+                <Image style={{minWidth: '70%'}} source={require('../assets/chatImg.png')}>
 
                 </Image>
-
-                <View style={{ position: "absolute", bottom: -50, left: 200, backgroundColor: 'black', borderRadius: 5, width: '15%', alignContent: 'center', justifyContent: 'center', alignItems: 'center' }}>
-
-                    <AntDesign name="heart" size={18} color="red" />
-                </View>
-
+                    <AntDesign style={{position:'absolute' , right:-10 , bottom:-115 , backgroundColor:'black' , padding:10,borderRadius:10}} name="heart" size={18} color="red" />
                 <Text style={{ color: 'white' }}>
                     {lastText}
                 </Text>

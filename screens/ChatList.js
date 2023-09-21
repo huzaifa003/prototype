@@ -82,7 +82,7 @@ const ChatList = ({ navigation }) => {
           { username: "Mr.John", seen: true, lastText: "Hi ! John What are you doing ?", date: "11/12/23", img: require('../assets/adeel.png'), grp: false },
           { username: "Mr.Ahmer", seen: false, lastText: "Hi ! What are you doing", date: "11/12/23", img: require('../assets/ahmer.png'), grp: false },
           { username: "Mr.Adeel", seen: true, lastText: "Hi ! What are you doing", date: "11/12/23", img: require('../assets/max.png'), grp: false },
-          [{ username: "Group Chat", seen: [true], lastText: "Hi ! What are you doing", date: "11/12/23", img: require('../assets/max.png'), grp: true },
+          [{ username: "Group Chat", seen: [true], lastText: "Hi ! What are you doing", date: "11/12/23", img: require('../assets/groupIcon.png'), grp: true },
           { username: "Group Chat", seen: [true], lastText: "Hi ! What are you doing", date: "11/12/23", img: require('../assets/max.png'), grp: true },
           { username: "Group Chat", seen: [true], lastText: "Hi ! What are you doing", date: "11/12/23", img: require('../assets/max.png'), grp: true },
           { username: "Group Chat", seen: [true], lastText: "Hi ! What are you doing", date: "11/12/23", img: require('../assets/max.png'), grp: true }

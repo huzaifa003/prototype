@@ -7,7 +7,7 @@ export default LeftSideChatProfile = ({ lastText, img }) => {
     const source = require('../assets/adeel.png');
     return (
         <View style={{flex: 1, flexDirection : 'row', gap: 15}}>
-            <Image style={{ width: "13%", height: "100%" }} source={source}>
+            <Image style={{ width: "13%", height: "100%" }} source={img}>
 
             </Image>
             <View style={styles.container}>

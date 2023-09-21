@@ -8,6 +8,7 @@ import RightSideChat from '../components/RightSideChat';
 import LeftSideChatProfile from '../components/LeftSideChatProfile';
 import LeftSideImage from '../components/LeftSideImage';
 import LeftSideButton from '../components/LeftSideButton';
+import GroupChatHeader from '../components/GroupChatHeader';
 
 const GroupChat = ({ route, navigation }) => {
     const user = route.params.user;
@@ -17,30 +18,23 @@ const GroupChat = ({ route, navigation }) => {
             height: '100%'
         }}>
 
-            <HeaderChatBox />
+           <GroupChatHeader/>
 
-
-            <ScrollView style={{ maxHeight: '75%' }}>
+            <ScrollView style={{ maxHeight: '80%' }}>
                 <View style={{ flex: 1, flexDirection: 'column', gap: 30, paddingTop: 30, paddingLeft: 20, paddingRight: 20 }}>
                     {user.map((u, index) => {
                         // console.log(u.img);
                         return (
                             <>
+                            
+                            <RightSideChat msg = {"@Skainet.ai Tell me about this app"}/>
                                 <LeftSideImage/>
                                 <LeftSideButton/>
                                 <LeftSideChatProfile {...u} />
                                 
-                                <RightSideChat msg = {"XYZYSASYAYYYACYZZ\nCAHJHAJHJHAHJH"}/>
                             </>
                         )
                     })}
-
-                    {/* <LeftSideChat msg={'Hi how are you ?'} />
-                    <RightSideChat msg={'Hi ! I am fine '} />
-                    <RightSideChat msg={'What about you ?'} />
-                    <LeftSideChat msg={'I am doing well'} /> */}
-
-
 
 
                 </View>
